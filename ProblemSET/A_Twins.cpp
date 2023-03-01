@@ -14,28 +14,26 @@ void insertionSort(int *arr, int n) {
     }
 }
 
-int main()
-{
-    int n, total=0, input, sum=0;
+int main() {
+
+    int n, total=0, sum=0;
     cin >> n;
     int coin[n];
     for (int i=0; i<n; i++) {
-        cin >> input;
-        coin[i] = input;
-        total += input;    
+        cin >> coin[i];
+        total += coin[i];
     }
+    total /= 2;
     
     insertionSort(coin, n);
     int count = 0;
     int i = n-1;
-    while (sum < total) {
+    while (sum <= total) {
         sum += coin[i];
         count++;
         i--;
     }
-
     cout << count << endl;
-    cout << total << " " << sum << endl;
-    
     return 0;
+    
 }
