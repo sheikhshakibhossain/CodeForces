@@ -4,35 +4,22 @@ using namespace std;
 
 int main() {
     
-    string s;
+    string s, msg="hello";
     cin >> s;
-    bool flag = false;
-    char letter[] = {'h', 'e', 'l', 'o'};
-    int k=0, count=0;
+    int count=0;
 
-    set<char> sack;
-
-    for (int i=0; i<s.length(); i++) { // h e l h c l u d o o
-        if ( sack.count(s.at(i)) ) {
-            sack.count(s.at(i))
-            i++;
-        }
-        while (s.at(i)==letter[k]) {
-            i++;
-            flag = true;
-            sack.insert(s.at(i));
-        }
-        if (flag) {
+    for (int i=0, k=0; i<s.length(); i++) { 
+        if (s[i]==msg[k]) {
             k++;
             count++;
         }
-    }
-
-    if (count == 4) {
+    } 
+    
+    if (count == 5) { // h e l l o --> 5 characters
         cout << "YES" << endl;
     } else {
         cout << "NO" << endl;
     }
-
+    
     return 0;
 }
