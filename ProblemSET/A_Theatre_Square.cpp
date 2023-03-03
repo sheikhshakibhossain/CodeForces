@@ -17,7 +17,7 @@ int main() {
     // }
     // if (count%4 != 0) {
     //     count += (count%4);
-    // }
+    // } // Doesn't work
 
     long long count = ceil(n/(double)a)*ceil(m/(double)a);
     cout << count << endl;
