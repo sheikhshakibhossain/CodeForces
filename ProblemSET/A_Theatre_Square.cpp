@@ -9,16 +9,17 @@ int main() {
     cin >> m;
     cin >> a;
 
-    int count = 0;
-    long long covered=0, area=(n*m), tile=(a*a);
+    // long long covered=0, area=(n*m), tile=(a*a);
     
-    while ( covered < area && (area-covered) >= tile ) {
-        count++;
-        covered += tile;
-    }
-    if (count%4 != 0) {
-        count += (count%4);
-    }
+    // while ( covered < area && (area-covered) >= tile ) {
+    //     count++;
+    //     covered += tile;
+    // }
+    // if (count%4 != 0) {
+    //     count += (count%4);
+    // }
+
+    long long count = ceil(n/(double)a)*ceil(m/(double)a);
     cout << count << endl;
     
     return 0;
