@@ -10,11 +10,12 @@ int main() {
     int area = m*n;
     int covered = 0;
     int count = 0;
+    
     while (covered<area && (area-covered) >= 2) {
         count++;
         covered += 2;
     }
     cout << count << endl;
-    
+
     return 0;
 }

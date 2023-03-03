@@ -11,9 +11,9 @@ int main() {
 
     int count = 0;
     long long covered=0, area=(n*m), tile=(a*a);
-    covered += tile;
-    while ( covered<area && (area-covered)>= tile ) {
-        count += 1;
+    
+    while ( covered < area && (area-covered) >= tile ) {
+        count++;
         covered += tile;
     }
     if (count%4 != 0) {
