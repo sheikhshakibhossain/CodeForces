@@ -20,6 +20,7 @@ int main() {
 }
 
 
+    /*   fails for this input 999999999997 499999999999   */ 
 
 // long long numAtPos(long long first, long long pos) {
 //     long long num = 0;
@@ -32,7 +33,7 @@ int main() {
 //     return num;
 // }
 
-// int main() {
+// int main() { 
 
 //     // after re-arrange -> 1, 3, 5, 7, 9, 2, 4, 6, 8
 //     // after re-arrange -> 1, 3, 5, 7, 9, 2, 4, 6, 8, 10
