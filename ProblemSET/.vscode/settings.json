@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "valarray": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "source_location": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp"
     }
 }
